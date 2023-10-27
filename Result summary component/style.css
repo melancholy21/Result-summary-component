@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    background-color: var(--Pale-blue);
+}
+
+:root {
+    /* Primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.row {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Light-royal-blue);
+    border-radius: 26px;
+    min-height: 550px;
+    width: 400px;
+}
+
+.row-1 h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: var(--Pale-blue);
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(hsl(250, 54%, 45%), hsla(250, 89%, 65%, 0.2));
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+}
+
+.score h1 {
+    color: var(--White);
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.score p {
+    color: var(--Light-lavender);
+    position: absolute;
+    bottom: 325px;
+}
+
+.great h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--White);
+}
+
+.great p {
+    font-size: 18px;
+    width: 250px;
+    text-align: center;
+    color: var(--Light-lavender);
+}
+
+.row-1 p {
+    text-align: center;
+    margin: 1rem;    
+}
+
+.summary-section {
+    background-color: var(--White);
+    border-radius: 0 26px 26px 0;
+    min-height: 550px;
+    width: 400px;
+    position: relative;
+    left: -14px;
+    z-index: -1;
+}
+
+.summary-section h1 {
+    margin: 3rem 0 2rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 8px 0 1rem 0;
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+}
+
+.flex-group p{
+    margin-left: 0.5rem;
+}
+
+.reaction {
+    background: hsla(9, 100%, 64%, 0.2);
+    height: 8vh;
+    width: 340px;
+    padding: 1rem;
+    border-radius: 9px;
+}
+
+.reaction p {
+    font-weight: 700;
+    color: tomato;
+}
+
+.memory {
+    background: hsl(45, 93%, 53%, 0.2);
+    height: 8vh;
+    width: 340px;
+    padding: 1rem;
+    border-radius: 9px;
+}
+
+.memory p {
+    font-weight: 700;
+    color: hsl(45, 93%, 53%);
+}
+
+.verbal {
+    background: hsl(173, 53%, 97%);
+    height: 8vh;
+    width: 340px;
+    padding: 1rem;
+    border-radius: 9px;
+}
+
+.verbal p {
+    font-weight: 700;
+    color: hsl(167, 43%, 63%);
+}
+
+.visual {
+    background: hsla(263, 60%, 32%, 0.2);
+    height: 8vh;
+    width: 340px;
+    padding: 1rem;
+    border-radius: 9px;
+}
+
+.visual p {
+    font-weight: 700;
+    color: hsl(263, 60%, 32%);
+}
+
+button {
+    margin-top: 1.2rem;
+    padding: 0.9rem;
+    width: 75%;
+    background-color: hsl(224, 30%, 27%);
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--Light-royal-blue);
+    color: var(--White);
+}
+
+
